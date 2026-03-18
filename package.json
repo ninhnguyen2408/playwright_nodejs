@@ -8,6 +8,8 @@
     "test:ui": "npx playwright test --ui",
     "test:debug": "npx playwright test --debug",
     "report": "npx playwright show-report",
+    "mcp": "node mcp-server/server.js",
+    "mcp:smoke": "node mcp-server/smoke-test.js",
     "test:homepage": "npx playwright test tests/homepage.spec.js",
     "test:login": "npx playwright test tests/login.spec.js",
     "test:forgot-password": "npx playwright test tests/forgot-password.spec.js"
@@ -17,5 +19,9 @@
     "dotenv": "^16.4.5"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "zod": "^4.3.6"
+  }
 }
