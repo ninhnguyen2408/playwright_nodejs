@@ -1,0 +1,21 @@
+{
+  "name": "econtract-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright automation tests for Mobifone eContract",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report",
+    "test:homepage": "npx playwright test tests/homepage.spec.js",
+    "test:login": "npx playwright test tests/login.spec.js",
+    "test:forgot-password": "npx playwright test tests/forgot-password.spec.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "dotenv": "^16.4.5"
+  },
+  "author": "",
+  "license": "ISC"
+}
